@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900;300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    --color-primary: #ffc500;
+    --default-padding: 1rem;
+}
+
+body {
+    margin: 0;
+    padding-top: 7.75rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 7.75rem;
+    padding: 0 1rem;
+
+    background-color: #000000;
+    color: #fff;
+}
+
+.navbar__links {
+    justify-self: end;
+}
+
+.navbar__links li { 
+    font-size: 0.875rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
+
+.navbar__links a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.navbar__links a:hover {
+    color: var(--color-primary);
+}
+
+.logo-studion {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 2.375rem;
+    line-height: 1ch;
+}
+
+.logo-studion__subtitle {
+    font-size: 0.875rem;
+    font-weight: 300;
+    float: right;
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
+
+#slider {
+    background-color: #000;
+    color: #fff;
+}
+
+.slide {
+    position: relative;
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__background-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy {
+    position: absolute;
+    top: 6.25rem;
+    left: 50vw;
+}
+
+.slide__copy h6 {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+}
+
+.slide__copy h2 {
+    font-size: 6.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+}
+
+.slide__copy h2 span {
+    display: block;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 1rem 2.5rem;
+    border: .125rem solid #fff;
+    border-radius: 5rem;
+    background: unset;
+    color: var(--color-primary);
+    font-size: .9375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s all ease;
+}
+
+.btn:hover, 
+.btn:active, 
+.btn:focus {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: #fff;
+}
