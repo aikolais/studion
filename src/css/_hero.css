@@ -6,7 +6,7 @@
 .hero__background {
     position: absolute;
     z-index: -1;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
 
