@@ -1,5 +1,5 @@
 # studion
-Homepage and Contact for Studion Events provider and services.
+Home e Contact para Studion Provedor de Eventos e Serviços. Projeto responsivo.
 
 
 ### 🛠 Tecnologias
