@@ -1,5 +1,5 @@
 # studion
-Home e Contact para Studion Provedor de Eventos e Serviços. Projeto responsivo.
+Home e Contact para Studion Provedor de Eventos e Serviços. Projeto responsivo seguindo metodologia de mobile first.
 
 
 ### 🛠 Tecnologias
