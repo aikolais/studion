@@ -1,5 +1,5 @@
 # studion
-Homepage for Studion Events provider and services.
+Homepage and Contact for Studion Events provider and services.
 
 
 ### 🛠 Tecnologias
