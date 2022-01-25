@@ -1,105 +1,126 @@
 .footer {
-    background-color: #000;
-    color: #fff;
-    padding: 0 1rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
 }
 
 .footer__container {
-    display: grid;
+  display: grid;
+  grid-template-columns: unset;
+  grid-template-rows: repeat(3, auto);
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 1279px) {
+  .footer__container {
     grid-template-columns: repeat(3, auto);
-    align-items: center;
-    padding: 5.25rem 0 3.75rem 0;
+    grid-template-rows: unset;
+    padding: 5rem 0;
+  }
+
+  .footer .logo-studion {
+    justify-self: start;
+  }
+
+  .footer__social {
+    justify-self: end;
+  }
 }
 
 .footer .logo-studion {
-    justify-self: start;
-    margin: 0;
+  justify-self: center;
+  margin: 0;
 }
 
 .logo-studion__subtitle {
-    display: block;
+  display: block;
 }
 
 .footer__form {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: unset;
+  gap: 1.25rem;
+}
+
+@media screen and (min-width: 1279px) {
+  .footer__form {
     grid-template-columns: 9ch auto;
-    gap: 1.25rem;
+  }
 }
 
 .footer__form label {
-    font-size: 0.875rem;
-    font-weight: 300;
-
+  font-size: 0.875rem;
+  font-weight: 300;
 }
 
 .footer__form fieldset {
-    display: grid;
-    grid-template-columns: auto 3.375rem;
+  display: grid;
+  grid-template-columns: auto 3.375rem;
 
-    border: unset;
-    margin: 0;
-    padding: 0;
+  border: unset;
+  margin: 0;
+  padding: 0;
 
-    width: 100%;
+  width: 100%;
 }
 
 .footer__form input {
-    background-color: var(--color-primary);
-    border: unset;
-    padding: 1rem;
+  background-color: var(--color-primary);
+  border: unset;
+  padding: 1rem;
 
-    font-size: .875rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #000;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
 }
 
 .footer__form input::placeholder {
-    color: #000;
+  color: #000;
 }
 
 .footer__form input:focus {
-    outline: unset;
+  outline: unset;
 }
 
 .footer__form button {
-    border: unset;
-    height: 3.375rem;
-    transition: 0.3s all ease;
+  border: unset;
+  height: 3.375rem;
+  transition: 0.3s all ease;
 }
 
 .footer__form button:hover {
-    color: #fff;
-    background-color: var(--color-copy);
-
+  color: #fff;
+  background-color: var(--color-copy);
 }
 
 .footer__social {
-    justify-self: end;
-    margin: 0.2rem;   
+  justify-self: center;
+  margin: 0.2rem;
 }
 
 .footer__social a,
 .footer__social a:visited,
 .footer__social a:active {
-    color: #fff;
+  color: #fff;
 }
 
 .footer__social a .fa-twitter,
-.footer__social a:visited .fa-twitter
-.footer__social a:active .fa-twitter {
-    color: #000;
+.footer__social a:visited .fa-twitter .footer__social a:active .fa-twitter {
+  color: #000;
 }
 
 .footer hr {
-    border-color: #fff4;
-    margin: 0;
+  border-color: #fff4;
+  margin: 0;
 }
 
 .footer p {
-    text-align: center;
-    font-weight: 300;
-    font-size: .875rem;
-    margin: 2.5rem 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin: 2.5rem 0;
 }

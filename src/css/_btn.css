@@ -37,3 +37,17 @@
     border-color: var(--color-copy);
     background: unset;
 }
+
+.btn--institutional,
+.btn--quote {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1279px) {
+    .btn--institutional,
+    .btn--quote {
+        display: unset;
+        margin: unset;
+    }
+}
